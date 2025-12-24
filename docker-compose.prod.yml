@@ -10,7 +10,6 @@ services:
       - "traefik.http.routers.traefik-testapp-1.entrypoints=websecure"
       - "traefik.http.routers.traefik-testapp-1.rule=Host(`${APP_HOST}`)"
       - "traefik.http.routers.traefik-testapp-1.tls=true"
-
       - "traefik.http.routers.traefik-testapp-1.tls.certresolver=le"
 
     volumes:
